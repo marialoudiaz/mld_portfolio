@@ -5,7 +5,7 @@
 }
 
 img{
-  max-width: 100%;
+ width : 30px;
 }
 
 ul, li, a {
@@ -14,7 +14,8 @@ ul, li, a {
   color: black;
 }
 
-/*NAVBAR*/
+/************************************************* NAVBAR *************************************************/
+
 
 nav{
   display: grid;
@@ -52,7 +53,7 @@ font-size: 14px;
 
 }
 
-/*HEADER*/
+/************************************************* HEADER *************************************************/
 header{
   display: flex;
   flex-direction: column;
@@ -60,132 +61,72 @@ header{
   font-family: 'Krona One';
 }
 
-header p{
-  color: white;
-}
 
-.jobs{
+header p{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1em;
+  margin-top: 1em;
+  padding: 0.8em;
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  background-color:rgb(42, 93, 255);
+  color: white;
+  height: auto;
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
 }
 
-:is(.job1, .job2, .job3, .job4, .job5, .job6):hover{
+
+.btn p:hover{
   background-color: white;
   box-shadow: none;
   color: rgb(42, 93, 255);
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border-radius: 20px;
   border: 1px solid rgb(76, 114, 239);
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
 
 }
 
-.job1{
-  background-color: rgb(42, 93, 255);
-  width: 35%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 1;
-}
-.job2{
-  background-color: rgb(42, 93, 255);
-  width: 50%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 2;
-}
-.job3{
-  background-color: rgb(42, 93, 255);
-  width: 30%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 3;
-}
-.job4{
-  background-color: rgb(42, 93, 255);
-  width: 25%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 4;
-}
-.job5{
-  background-color: rgb(42, 93, 255);
-  width: 10%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 5;
-}
-
-.job6{
-  background-color: rgb(42, 93, 255);
-  width: 12%;
-  height: auto;
-  margin-top: 1em;
-  padding: 0.6em;
-  border: 1px solid rgb(76, 114, 239);
-  border-radius: 20px;
-  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  font-family: 'Krona One';
-  font-size: 15px;
-  text-align: center;
-  z-index: 6;
-}
 
 
-/*MAIN*/
+/*************************************************MAIN*************************************************/
 .wrapper{
   width: 90%;
   margin: auto;
 }
 
+body{
+  font-family: Montserrat;
+}
+
 .main{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2em;
 }
 
 .main-flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-column: span 3;
 }
 .RS{
-grid-column: 1;
+grid-column: 2;
 width: 30%;
 }
+
+.RS img
+
 
 #project{
 grid-column: 2;
@@ -196,7 +137,8 @@ grid-column: 2;
   width: 30%;
 }
 
-/*FOOTER*/
+/************************************************* FOOTER *************************************************/
+
 footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
