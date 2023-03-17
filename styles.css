@@ -154,9 +154,20 @@ p{
 
 .categorie{
   display: flex;
-  
-  gap:2px;
+  justify-content: space-between;
+  gap: 1em;
 }
+
+.categorie h4{
+  color: grey;
+  font-family: 'Krona One';
+}
+.categorie p{
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 0.3em 1em ;
+}
+
 
 .grid-8-col{
   display: grid;
@@ -210,6 +221,10 @@ margin: 0 7vh 0 7vh;
   margin-right: 4vh;
   border-bottom: 1px solid lightgray;
   padding-bottom: 2em;
+}
+
+.project h2{
+  font-family: 'Krona One';
 }
 
 #brush{
