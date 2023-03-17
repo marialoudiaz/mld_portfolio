@@ -5,7 +5,7 @@
 }
 
 img{
- width : 30px;
+ width : 100%;
 }
 
 ul, li, a {
@@ -62,7 +62,7 @@ header{
 }
 
 
-header p{
+header div{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,12 +71,18 @@ header p{
   padding: 0.8em;
   border-radius: 20px;
   box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
-  background-color:rgb(42, 93, 255);
+
   color: white;
   height: auto;
   font-family: 'Krona One';
   font-size: 15px;
   text-align: center;
+}
+
+header div p{
+  background-color:rgb(42, 93, 255);
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 
@@ -108,43 +114,59 @@ body{
   font-family: Montserrat;
 }
 
-.main{
+.grid-6-col{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   gap: 2em;
 }
 
-.main-flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: span 3;
-}
-.RS{
-grid-column: 2;
-width: 30%;
+
+.col-1{
+grid-column: 1;
+grid-row: 1;
+width: 10%;
+position: fixed;
 }
 
-.RS img
+.container-icons{
+  border: 2px solid black;
+  border-radius: 15em;
+  padding: 7px;
+  width: 40%;
+  background-color: white;
+}
 
 
-#project{
+.col-2{
 grid-column: 2;
+grid-row: 1;
 }
 
 .scrollbar{
   grid-column: 3;
-  width: 30%;
+  justify-self: end;
+  width: 150px;
+  position: fixed;
+  top: 300px;
+  bottom: 400px;
+  z-index: -1000;
+  
 }
 
 /************************************************* FOOTER *************************************************/
 
 footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1em;
-  border-bottom: 1px solid lightgray;
-  position: sticky;
-  top:0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+  border-top: 1px solid grey;
   background-color: white;
+}
+
+footer img {
+  width: 5%;
 }
