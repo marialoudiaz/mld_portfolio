@@ -142,6 +142,22 @@ body{
   font-family: Montserrat;
 }
 
+
+
+h2{
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 0.9em;
+}
+
+.categorie{
+  display: flex;
+  
+  gap:2px;
+}
+
 .grid-8-col{
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
@@ -194,10 +210,6 @@ margin: 0 7vh 0 7vh;
   margin-right: 4vh;
   border-bottom: 1px solid lightgray;
   padding-bottom: 2em;
-}
-
-.categorie{
-  gap:2px;
 }
 
 #brush{
