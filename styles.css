@@ -172,5 +172,37 @@ header p{
   margin: auto;
 }
 
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RS{
+grid-column: 1;
+width: 30%;
+}
+
+#project{
+grid-column: 2;
+}
+
+.scrollbar{
+  grid-column: 3;
+  width: 30%;
+}
 
 /*FOOTER*/
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1em;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top:0px;
+  background-color: white;
+}
