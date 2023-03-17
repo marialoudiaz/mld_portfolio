@@ -8,13 +8,6 @@ img{
   max-width: 100%;
 }
 
-
-.wrapper{
-  width: 90%;
-  margin: auto; 
-
-}
-
 ul, li, a {
   list-style: none;
   text-decoration: none;
@@ -27,6 +20,10 @@ nav{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1em;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top:0px;
+  background-color: white;
 }
 
 nav img{
@@ -46,7 +43,7 @@ font-size: 14px;
 
 .navcat{
 display: flex;
-grid-column-end: 3;
+grid-column: 3;
 justify-content: space-between;
 align-items: center;
 gap: 2%;
@@ -56,9 +53,123 @@ font-size: 14px;
 }
 
 /*HEADER*/
+header{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  font-family: 'Krona One';
+}
+
+header p{
+  color: white;
+}
+
+.jobs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+class :is(.job1, .job2, .job3, .job4, .job5, .job6):hover{
+  background-color: rgb(170, 188, 246);
+  color: rgb(42, 93, 255);
+  border:rgb(76, 114, 239);
+
+}
+
+.job1{
+  background-color: rgb(42, 93, 255);
+  width: 35%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 1;
+}
+.job2{
+  background-color: rgb(42, 93, 255);
+  width: 50%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 2;
+}
+.job3{
+  background-color: rgb(42, 93, 255);
+  width: 30%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 3;
+}
+.job4{
+  background-color: rgb(42, 93, 255);
+  width: 25%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 4;
+}
+.job5{
+  background-color: rgb(42, 93, 255);
+  width: 10%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 5;
+}
+
+.job6{
+  background-color: rgb(42, 93, 255);
+  width: 12%;
+  height: auto;
+  margin-top: 1em;
+  padding: 0.6em;
+  border: 1px solid rgb(76, 114, 239);
+  border-radius: 20px;
+  box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.69);
+  font-family: 'Krona One';
+  font-size: 15px;
+  text-align: center;
+  z-index: 6;
+}
 
 
 /*MAIN*/
+.wrapper{
+  width: 90%;
+  margin: auto;
+}
 
 
 /*FOOTER*/
