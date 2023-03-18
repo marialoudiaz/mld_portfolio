@@ -2,6 +2,7 @@
   box-sizing : border-box;
   margin:0;
   padding: 0;
+  cursor:url(./images/pointer_jaune-2.png), auto;
 }
 
 img{
@@ -142,30 +143,65 @@ body{
   font-family: Montserrat;
 }
 
-
-
 h2{
-  font-size: 1.5em;
+  font-size: 2.5em;
+  font-family: 'Krona One';
 }
+h3{
+  font-size: 2em;
+  font-family: 'Montserrat';
+  margin-top: 0.5em;
+}
+
+
 
 p{
   font-size: 0.9em;
 }
 
-.categorie{
+.flexbox{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 1em;
 }
 
-.categorie h4{
+.flexbox h4{
   color: grey;
   font-family: 'Krona One';
 }
-.categorie p{
+.flexbox p{
   border-radius: 20px;
   border: 1px solid grey;
   padding: 0.3em 1em ;
+}
+
+.flexbox img{
+  width:30px;
+}
+
+.flagbox img{
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 80px;
+  height: 50px;
+}
+
+.languages{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 200px;
+  border: 2px solid black;
+  font-size: 30px;
+}
+
+.languages img{
+  width: 85px;
+  border-radius: 50px;
+  padding: 0.3em;
 }
 
 
