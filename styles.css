@@ -176,7 +176,7 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1em;
+  gap: 0.3em;
 }
 
 .flexbox h4{
@@ -188,8 +188,26 @@ p{
   padding: 0.3em 1em ;
 }
 
-.flexbox img{
-  width:30px;
+
+.flexbox-start{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.flexbox-start p {
+  border: 1px solid grey;
+  padding: 0.3em 1em ;
+  color: grey;
+  border-radius: 20px;
+  margin-bottom: 5em;
+}
+
+.flexbox-start img{
+  width: 120px;
+  padding: 1em;
 }
 
 #aboutme{
@@ -301,6 +319,7 @@ margin: 0 7vh 0 7vh;
   font-family: 'Inknut Antiqua', serif;
   font-size: 1em;
 }
+
 /************************************************* FOOTER *************************************************/
 
 footer{
@@ -325,21 +344,3 @@ footer img {
 }
 
 /************************************************* CAROUSEL *************************************************/
-
-
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
