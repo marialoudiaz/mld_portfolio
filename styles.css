@@ -15,6 +15,8 @@ ul, li, a {
   color: black;
 }
 
+
+
 /************************************************* NAVBAR *************************************************/
 
 
@@ -102,29 +104,34 @@ font-size: 14px;
 header{
   display: flex;
   flex-direction: column;
-  margin-top: 2.5em;
-  font-family: 'Krona One';
+  margin-top: 1em;
+  font-family: 'Inknut Antiqua', serif;
   border-bottom: 1px solid lightgrey;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+  
+}
+
+header h1{
   margin-left:1em;
 }
 
 .btn{
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
-  margin-top: 1em;
-  padding: 0.8em;
-  font-family: 'Krona One';
-  font-size: 15px;
+  gap: 0.7em;
+  margin-top: 0.2rem;
+  padding: 0.5em;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  margin-left:1em;
 }
 
 .btn p{
   background-color:rgb(42, 93, 255);
   color: white;
   box-shadow: 7px 9px 13px -9px rgba(186,179,186,0.30);
-  border-radius: 20px;
-  padding: 10px 20px;
+  padding: 7px 20px;
+  border-radius: 50px;
 }
 
 .btn p:hover{
@@ -144,8 +151,8 @@ body{
 }
 
 h2{
-  font-size: 2.5em;
-  font-family: 'Krona One';
+  font-size: 2em;
+  font-family: 'Inknut Antiqua', serif;
 }
 h3{
   font-size: 2em;
@@ -168,7 +175,6 @@ p{
 
 .flexbox h4{
   color: grey;
-  font-family: 'Krona One';
 }
 .flexbox p{
   border-radius: 20px;
@@ -260,7 +266,7 @@ margin: 0 7vh 0 7vh;
 }
 
 .project h2{
-  font-family: 'Krona One';
+  font-family: 'Inknut Antiqua', serif;
 }
 
 #brush{
@@ -281,7 +287,9 @@ margin: 0 7vh 0 7vh;
   bottom: 400px;
 }
 
-
+.inknut{
+  font-family: 'Inknut Antiqua', serif;
+}
 /************************************************* FOOTER *************************************************/
 
 footer{
