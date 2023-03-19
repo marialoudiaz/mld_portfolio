@@ -324,14 +324,19 @@ margin: 0 7vh 0 7vh;
 
 footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  gap: 5%;
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 3em;
   border-top: 1px solid grey;
-  background-color: white;
+}
+
+footer div{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 footer img {
