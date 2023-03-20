@@ -60,6 +60,55 @@ font-size: 14px;
 
 
 
+/************************************************* HAMBURGER MENU *************************************************/
+.hamburger{
+  display: none;
+}
+
+@media all and (max-width:480px){
+  .hamburger{
+    display:flex;
+    justify-content: end;
+    align-items:baseline;
+  }
+  .hamburger-content{
+    display: none;
+    position: absolute;
+    right:0; /* FERA APPARAITRE LE TEXTE A GAUCHE*/
+    z-index:1; /* PERMET DE PASSER PAR DESSUS*/
+  }
+  .hamburger-content a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .hamburger:hover .hamburger-content {
+    display: block;
+    background-color: black;
+    margin: 2px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .hamburger span {
+    display: flex;
+    justify-content: end;
+    transform: rotate(90deg);
+    color: black;
+  }
+  .hamburger:hover span {
+    transition: transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+  .navcat{
+    display: none;
+  }
+} 
+
+
+
 /************************************************* BUTTONS *************************************************/
 
 .btn{
