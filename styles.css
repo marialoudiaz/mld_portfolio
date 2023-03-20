@@ -57,6 +57,45 @@ font-family: 'Krona One';
 font-size: 14px;
 }
 
+@media all and (max-width:480px){
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index:1;
+  }
+  
+  .logo{
+  display: flex;
+  grid-column: 1/2;
+  justify-content: start;
+  align-items: center;
+  gap: 2%;
+  font-family: 'Krona One';
+  font-size: 14px;
+  }
+  
+  .navcat{
+  display: flex;
+  grid-column: 3;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  font-family: 'Krona One';
+  font-size: 14px;
+  }
+  
+  .scrollbar img{
+  width : 120px;
+  position: fixed;
+  right: 12px;
+  float: right;
+  }
+}
 
 
 
@@ -302,6 +341,7 @@ position: fixed;
 top: 300px;
 text-align: center;
 }
+
 
 .col-1 img{
   width: 30px;
