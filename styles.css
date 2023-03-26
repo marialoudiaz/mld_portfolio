@@ -399,41 +399,44 @@ margin: 0 10vh;
   .container-icons{
       width: 55px;
   }
+.project{
+  margin-left: 0.5vw;
+}
 
 .col-2{
   grid-column: 1/4;
   margin: 0 10vh;
   }
 
-  .project{
-    display: flex;
-    flex-direction: column;
-    gap:1em;
-    margin-bottom: 6em;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 1em;
-  }
-
-
 .flexbox-start{
   display: flex;
   flex-wrap: wrap;
   justify-content:baseline;
   align-items: center;
+  gap: 1em;
+  padding: 0.1em;
 }
 
 .flexbox-start p {
-  padding: 0.3em 1em ;
+  padding: 0.2em 0.5em ;
   color: grey;
   border-radius: 20px;
   border: 1px solid grey;
   margin-bottom: 0;
+  margin-top: 1px;
 }
 .flexbox-start img{
-  width:6em;
+  margin: 0px;
+  padding: 0;
+  width: 70px;
+  
 }
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
 }
 
 /************************************************* SPECIFIC *************************************************/
@@ -463,6 +466,11 @@ margin: 0 10vh;
 @media all and (max-width:480px){
   #aboutme{
     font-size: 2.5em;
+  }
+  #lp{
+    font-size: 3em;
+    position: relative;
+    top: 65px;
   }
 }
 
