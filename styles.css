@@ -563,6 +563,15 @@ margin: 0 10vh;
   
 }
 
+#me{
+  width: 300px;
+  top: -10px;
+  background-color: black;
+  border-radius: 10em 150px;
+  position: relative;
+  left: 70vw;
+}
+
 /************************************************* FOOTER *************************************************/
 
 footer{
