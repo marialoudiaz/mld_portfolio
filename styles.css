@@ -225,6 +225,47 @@ button:hover {
   color: rgb(42, 93, 255);
 }
 
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color:  #EEEE
+  ;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 1200px;
+  font-size: 14px;
+  gap: 4em;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: darkgrey;
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
 @media all and (max-width:480px){
 .btn{
   display: flex;
@@ -307,6 +348,29 @@ p{
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
+}
+
+.flexbox-center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  text-align: center;
+  align-items:center;
+  gap: 12em;
+}
+.flexbox-center p {
+  padding: 0.2em 0.5em ;
+  color: grey;
+  border-radius: 20px;
+  border: 1px solid grey;
+  margin-bottom: 0;
+  margin-top: 1px;
+}
+.flexbox-center img{
+  margin: 0px;
+  padding: 0;
+  width: 100px;
+  
 }
 
 .flexbox-start p {
@@ -534,5 +598,3 @@ footer img {
     width: 10%;
   }
 }
-
-/************************************************* CAROUSEL *************************************************/
