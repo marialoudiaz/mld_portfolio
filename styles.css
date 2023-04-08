@@ -353,10 +353,9 @@ p{
 .flexbox-center{
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
-  text-align: center;
+  justify-content:start;
   align-items:center;
-  gap: 12em;
+  gap: 2.5em;
 }
 .flexbox-center p {
   padding: 0.2em 0.5em ;
@@ -470,10 +469,12 @@ margin: 0 10vh;
   position: fixed;
   top: 300px;
   bottom: 400px;
+  z-index: 900000000000000000000;
 }
 
 #scrollbar img{
   width: 120px;
+  
 }
 
 .inknut{
@@ -566,13 +567,14 @@ margin: 0 10vh;
   
 }
 
+
 #me{
-  width: 300px;
+  width: 350px;
   top: -10px;
   background-color: black;
-  border-radius: 10em 150px;
+  border-radius: 12em 200px;
   position: relative;
-  left: 70vw;
+  left: 67vw;
 }
 
 /************************************************* FOOTER *************************************************/
@@ -628,12 +630,12 @@ footer img {
   background: linear-gradient(#504b45 0%, #3c3b37 100%);
 }
 
-.butt {
+.butterm {
   display: flex;
   align-items: center;
 }
 
-.btn {
+.btnterm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -650,15 +652,15 @@ footer img {
   box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
 }
 
-.btn-color {
+.btnterm-color {
   background: #ee411a;
 }
 
-.btn:hover {
+.btnterm:hover {
   cursor: pointer;
 }
 
-.btn:focus {
+.btnterm:focus {
   outline: none;
 }
 
@@ -684,7 +686,17 @@ footer img {
 }
 
 .terminal_promt {
+
+  flex-wrap: wrap;
+  align-items: flex-start;
   display: flex;
+  
+}
+
+#img{
+  gap: 3em;
+  padding: 1em;
+  margin: 0em 0.5em 1em 0.5em;
 }
 
 .terminal_promt span {
